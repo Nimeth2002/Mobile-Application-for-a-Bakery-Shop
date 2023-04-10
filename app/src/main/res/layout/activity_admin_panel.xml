@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/Bakery"
+    tools:context=".AdminPanel">
+
+    <TextView
+        android:id="@+id/txtSprinklesBakery6"
+        android:layout_width="292dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="117dp"
+        android:layout_marginBottom="28dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Sprinkles bakery"
+        android:textAlignment="center"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtAdminPanel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtAdminPanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Admin Panel"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCatogaries"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSprinklesBakery6" />
+
+    <Button
+        android:id="@+id/btnCatogaries"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="54dp"
+        android:text="Create New Catogaties"
+        app:layout_constraintBottom_toTopOf="@+id/btnCreateNewCupcakes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAdminPanel" />
+
+    <Button
+        android:id="@+id/btnManageCatogaries"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:text="Manage Catogaries"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnCreateNewCupcakes"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnCatogaries"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.445" />
+
+    <Button
+        android:id="@+id/btnCreateNewCupcakes"
+        android:layout_width="195dp"
+        android:layout_height="0dp"
+        android:text="Create New Cupcakes"
+        app:layout_constraintBottom_toTopOf="@+id/btnViewOrders"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCatogaries" />
+
+    <Button
+        android:id="@+id/btnManageCupcakes"
+        android:layout_width="190dp"
+        android:layout_height="0dp"
+        android:text="Manage Cupcakes"
+        app:layout_constraintBottom_toTopOf="@+id/btnProcessOrders"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnViewOrders" />
+
+    <Button
+        android:id="@+id/btnViewOrders"
+        android:layout_width="194dp"
+        android:layout_height="50dp"
+        android:text="View Orders"
+        app:layout_constraintBottom_toTopOf="@+id/btnManageCupcakes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCreateNewCupcakes" />
+
+    <Button
+        android:id="@+id/btnProcessOrders"
+        android:layout_width="196dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="153dp"
+        android:text="Process Orders"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnManageCupcakes" />
+</androidx.constraintlayout.widget.ConstraintLayout>

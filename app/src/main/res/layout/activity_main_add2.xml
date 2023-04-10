@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/Bakery"
+    tools:context=".MainActivityAdd2">
+
+    <Button
+        android:id="@+id/btnBackToCatogaryMenu"
+        android:layout_width="166dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="198dp"
+        android:text="Back to Catogary Menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdd1" />
+
+    <Button
+        android:id="@+id/btnAdd1"
+        android:layout_width="164dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="26dp"
+        android:text="Add"
+        app:layout_constraintBottom_toTopOf="@+id/btnBackToCatogaryMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBakeryItem" />
+
+    <EditText
+        android:id="@+id/txtCatogaryType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="175dp"
+        android:layout_marginBottom="56dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Catogary Type"
+        app:layout_constraintBottom_toTopOf="@+id/txtBakeryItem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtBakeryItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="66dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Bakery Item "
+        app:layout_constraintBottom_toTopOf="@+id/btnAdd1"
+        app:layout_constraintStart_toStartOf="@+id/txtCatogaryType"
+        app:layout_constraintTop_toBottomOf="@+id/txtCatogaryType" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
